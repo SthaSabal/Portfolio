@@ -38,38 +38,38 @@ export default function Experience() {
   ];
 
   return (
-    <div className="relative w-full max-w-[755px] px-5 md:px-0 mx-auto mt-16 flex flex-col md:flex-row gap-20 font-manrope">
+    <div className="relative w-full max-w-[664px] px-5 md:px-0 mx-auto mt-20 flex flex-col md:flex-row">
       {/* Experience Section */}
-      <section className="w-full md:w-[355px] mx-auto flex flex-col md:flex-col gap-4">
+      <section className="w-full mx-auto flex flex-col md:flex-col gap-6">
       <header>
           <div className="font-manrope text-sm font-semibold text-[#828282] tracking-wide">
             Experience
           </div>
         </header>
-        <div className="flex flex-col gap-7">
+        <div className="flex flex-col gap-6">
           {experiences.map((exp, index) => (
             <div key={index}>
-              <p className="mt-4 font-manrope text-base text-[#4c4c4c] leading-relaxed">{exp.period}</p>
-              <h3 className="text-lg font-semibold text-black">{exp.title}</h3>
-              <p className="mt-4 font-manrope text-base text-[#4c4c4c] leading-relaxed">{exp.organization}</p>
+              <p className="mt-1 font-manrope text-base text-[#4c4c4c] text-[15px] leading-relaxed">{exp.period}</p>
+              <h3 className="font-manrope text-xl font-semibold text-black text-[16px]">{exp.title}</h3>
+              <p className="mt-1 font-manrope text-base text-[#4c4c4c] text-[15px] leading-relaxed">{exp.organization}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* Education Section */}
-      <section className="w-full md:w-[355px] mx-auto flex flex-col md:flex-col gap-4">
+      <section className="w-full mx-auto flex flex-col md:flex-col gap-6">
       <header>
           <div className="font-manrope text-sm font-semibold text-[#828282] tracking-wide">
             Education
           </div>
         </header>
-        <div className="flex flex-col gap-7">
+        <div className="flex flex-col gap-6">
           {education.map((edu, index) => (
             <div key={index}>
-              <p className="mt-4 font-manrope text-base text-[#4c4c4c] leading-relaxed">{edu.period}</p>
-              <h3 className="text-lg font-semibold text-black">{edu.title}</h3>
-              <p className="mt-4 font-manrope text-base text-[#4c4c4c] leading-relaxed">{edu.institution}</p>
+              <p className="mt-1 font-manrope text-base text-[#4c4c4c] text-[15px] leading-relaxed">{edu.period}</p>
+              <h3 className="font-manrope text-xl font-semibold text-black text-[16px]">{edu.title}</h3>
+              <p className="mt-1 font-manrope text-base text-[#4c4c4c] text-[15px] leading-relaxed">{edu.institution}</p>
             </div>
           ))}
         </div>

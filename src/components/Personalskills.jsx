@@ -26,11 +26,11 @@ export default function Personalskills() {
   ];
 
   return (
-    <div className="relative w-full max-w-[755px] px-5 md:px-0 mx-auto flex flex-col md:flex-row">
+    <div className="relative w-full max-w-[664px] px-5 md:px-0 mx-auto flex flex-col md:flex-row">
       {/* Personal Skills */}
-      <section className="w-full max-w-[755px] mx-auto flex flex-col md:flex-col gap-5 mt-16">
+      <section className="w-full max-w-[755px] mx-auto flex flex-col md:flex-col gap-5 mt-20">
         <header>
-          <div className="font-manrope text-sm font-semibold text-[#828282] tracking-wide">
+          <div className="font-manrope text-sm font-semibold text-[#828282] text-[14px] tracking-wide">
             Personal Skills
           </div>
         </header>
@@ -38,7 +38,7 @@ export default function Personalskills() {
           {personalSkills.map((skill, index) => (
             <span
               key={index}
-              className="inline-block rounded-full px-4 py-2 border border-black text-gray-800 mt-4 font-manrope text-base text-[#4c4c4c] leading-relaxed"
+              className="inline-block rounded-full px-4 py-2 border border-black mt-2 font-manrope text-base text-[#4c4c4c] text-[15px] leading-relaxed"
             >
               {skill}
             </span>
@@ -47,23 +47,23 @@ export default function Personalskills() {
       </section>
 
       {/* Creative Fields and Tools */}
-      <section className="w-full max-w-[755px] mx-auto flex flex-col md:flex-col gap-5 mt-16">
+      <section className="w-full max-w-[755px] mx-auto flex flex-col md:flex-col gap-5 mt-20">
         <header>
-          <div className="font-manrope text-sm font-semibold text-[#828282] tracking-wide">
+          <div className="font-manrope text-sm font-semibold text-[#828282] text-[14px] tracking-wide">
             Creative Fields
           </div>
         </header>
-        <div className="flex flex-wrap gap-x-4 gap-y-2">
+        <div className="mt-0 flex flex-wrap gap-x-4 gap-y-2">
           {creativeFields.map((field, index) => (
             <span
               key={index}
-              className="inline-block rounded-full px-7 py-2 border border-black text-gray-800 mt-4 font-manrope text-base text-[#4c4c4c] leading-relaxed"
+              className="inline-block rounded-full px-4 py-2 border border-black mt-2 font-manrope text-base text-[#4c4c4c] text-[15px] leading-relaxed"
             >
               {field}
             </span>
           ))}
         </div>
-        <div className="flex items-center gap-5 flex-wrap">
+        <div className="flex items-center gap-4.5 flex-wrap">
           {designTools.map((tool, index) => (
             <div key={index} title={tool.name}>
               {tool.icon}

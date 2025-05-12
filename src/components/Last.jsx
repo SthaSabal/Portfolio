@@ -1,12 +1,10 @@
 
-
-
 import React from "react"
 
 export default function Footer(){
 
   return (
-    <footer className="w-full mx-auto flex flex-col md:flex-col mt-16">
+    <div className="w-full mx-auto flex flex-col md:flex-col mt-16">
 
       <div className="w-full h-px bg-black" />
         <div className="flex justify-center mt-2">
@@ -15,6 +13,6 @@ export default function Footer(){
           </p>
         </div>
 
-    </footer>
+    </div>
   )
 }

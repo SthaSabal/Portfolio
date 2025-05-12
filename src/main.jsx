@@ -4,6 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom'
 import ArtworkPage from './Pages/ArtworkPage.jsx'
+import UiuxPage from './Pages/UiuxPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: "artwork",
     element: <ArtworkPage/>
+  },
+  {
+    path: "uiux",
+    element: <UiuxPage/>
   },
 ]);
 

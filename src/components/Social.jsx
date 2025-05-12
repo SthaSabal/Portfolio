@@ -18,7 +18,7 @@ export default function Box() {
       icon: "/tiktok.svg",
       username: "sthasabalart",
       platform: "tiktok",
-      link: "https://www.facebook.com/sthasabalart",
+      link: "https://www.tiktok.com/@sthasabalart",
     },
     {
       icon: "/youtube.svg",
@@ -28,14 +28,14 @@ export default function Box() {
     },
   ];
   return (
-    <section className="w-full max-w-[755px] px-5 md:px-0 mx-auto flex flex-col md:flex-col gap-8 mt-16">
+    <section className="w-full max-w-[664px] px-5 md:px-0 mx-auto flex flex-col md:flex-col gap-6 mt-20">
       <header>
-          <div className="font-manrope text-sm font-semibold text-[#828282] tracking-wide">
+          <div className="font-manrope text-sm font-semibold text-[14px] text-[#828282] tracking-wide">
             Ealsewhere
           </div>
         </header>
 
-      <div className="flex flex-col gap-4 sm:flex-row sm:justify-between">
+      <div className="gap-6 flex flex-col sm:flex-row sm:justify-between">
         {socialProfiles.map((profile, index) => (
           <a
             key={index}
@@ -49,7 +49,7 @@ export default function Box() {
               alt={profile.username}
               className="w-5 h-5"
             />
-            <span className="text-gray-800 mt-0 font-manrope text-base text-[#4c4c4c] leading-relaxed">{profile.username}</span>
+            <span className="hover:underline font-manrope text-base text-[#4c4c4c] text-[15px] leading-relaxed">{profile.username}</span>
           </a>
         ))}
       </div>
